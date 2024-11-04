@@ -2,8 +2,8 @@ h2 {/*:hover is a psuedoselector*/
     color: olive;
 }
 
-.subtitle {
-    color: aqua;
+h2[class=subtitle]{
+    color: steelblue;
 }
 
 /* li:first-child{
@@ -33,9 +33,19 @@ h2 + a {
 h2 ~ a{
     color: red; /*So in this the changes will apply to all the 'a' tags after the h2 given that they are in the same parent tag*/
 }
+
 ul > li {
-    color:blue;/*Psuedo Selector is more specific than the general selector hence commenting it out*/
+    color:rgb(2, 69, 41);/*Psuedo Selector is more specific than the general selector hence commenting it out*/
 }
+
 ul li {
     color:green;
+}
+
+img[src^="pic/"]{/**^ indicates that the sources starts with pic, $ means that the source ends with pic, * means that the source contains pic**/
+    border: 5px solid black
+}
+
+h2[class~=article-subtitle] {/**only works for things seperated by white spaces and '|' is for the class starting with**/
+    background: yellow
 }
