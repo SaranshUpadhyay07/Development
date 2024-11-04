@@ -1,7 +1,27 @@
-h2 {
+h2 {/*:hover is a psuedoselector*/
     color: olive;
 }
 
 .subtitle {
     color: aqua;
+}
+
+li:first-child{
+    color: red
+}
+li:last-child{
+    color:blue
+}
+li:nth-child(2){
+    color:blueviolet
+}
+li:only-child{
+    color:brown
+}
+
+#google-link:link {
+    color:blue
+}
+#google-link:visited{
+    color:purple
 }
