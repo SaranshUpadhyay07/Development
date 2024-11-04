@@ -6,7 +6,7 @@ h2 {/*:hover is a psuedoselector*/
     color: aqua;
 }
 
-li:first-child{
+/* li:first-child{
     color: red
 }
 li:last-child{
@@ -17,11 +17,25 @@ li:nth-child(2){
 }
 li:only-child{
     color:brown
-}
+} */
 
-#google-link:link {
+/* #google-link:link {
     color:blue
 }
 #google-link:visited{
     color:purple
+} */
+
+h2 + a {
+    color: red;/*This would only work if the a is just followed the h2 and not later as in after in the code */
+}
+
+h2 ~ a{
+    color: red; /*So in this the changes will apply to all the 'a' tags after the h2 given that they are in the same parent tag*/
+}
+ul > li {
+    color:blue;/*Psuedo Selector is more specific than the general selector hence commenting it out*/
+}
+ul li {
+    color:green;
 }
