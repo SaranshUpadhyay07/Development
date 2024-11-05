@@ -1,51 +1,7 @@
-h2 {/*:hover is a psuedoselector*/
-    color: olive;
+#title {
+    color: rgb(162, 115, 7); 
 }
 
-h2[class=subtitle]{
-    color: steelblue;
-}
-
-/* li:first-child{
-    color: red
-}
-li:last-child{
-    color:blue
-}
-li:nth-child(2){
-    color:blueviolet
-}
-li:only-child{
-    color:brown
-} */
-
-/* #google-link:link {
-    color:blue
-}
-#google-link:visited{
-    color:purple
-} */
-
-h2 + a {
-    color: red;/*This would only work if the a is just followed the h2 and not later as in after in the code */
-}
-
-h2 ~ a{
-    color: red; /*So in this the changes will apply to all the 'a' tags after the h2 given that they are in the same parent tag*/
-}
-
-ul > li {
-    color:rgb(2, 69, 41);/*Psuedo Selector is more specific than the general selector hence commenting it out*/
-}
-
-ul li {
-    color:green;
-}
-
-img[src^="pic/"]{/**^ indicates that the sources starts with pic, $ means that the source ends with pic, * means that the source contains pic**/
-    border: 5px solid black
-}
-
-h2[class~=article-subtitle] {/**only works for things seperated by white spaces and '|' is for the class starting with**/
-    background: yellow
+.subtitle{
+    color: rgb(219, 168, 50);
 }
