@@ -1,7 +1,13 @@
+/*Elemnts tags at the top*/
+body {
+    background: rgb(204, 229, 255);
+}
+
 #title {
     color: rgb(162, 115, 7); 
 }
 
 .subtitle{
-    color: rgb(219, 168, 50);
+    color: rgb(200, 148, 30);
 }
+
