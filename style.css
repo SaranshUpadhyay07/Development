@@ -1,6 +1,7 @@
 /*Elemnts tags at the top*/
 body {
     background: rgba(204, 229, 255, 0.9);/*alpha is added as the fourth quantity which is the transparency or opacity od the colour ranging between 0 and 1*/
+    font-size: 20pt;/*px and pt are almost same while pc is much bigger, roughly around 12 pt...Also % and em can be used which are relative units*/
 }
 p{
     color: purple;
@@ -16,7 +17,7 @@ p{
 
 #service-image {    
     height:400px;
-    width: 70%;
+    width: 70vw;
     /*background: linear-gradient(215deg, rgb(25, 0, 75), black); you can use top,bottom,diagnols etc and also angles*/
     background: radial-gradient(circle, red 13%, blue 53%, green 34%);
 }
