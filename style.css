@@ -2,9 +2,16 @@
 body {
     background: rgba(204, 229, 255, 0.9);/*alpha is added as the fourth quantity which is the transparency or opacity od the colour ranging between 0 and 1*/
     font-size: 20pt;/*px and pt are almost same while pc is much bigger, roughly around 12 pt...Also % and em can be used which are relative units*/
+    text-transform: capitalize; /*lower case and uppercase*/
+    text-align: justify; /*left, right, center, justify*/
 }
 p{
     color: purple;
+}
+
+.google-link {
+    text-decoration: underline; /*none,underline,overlne and line-through*/
+
 }
 
 #title {
