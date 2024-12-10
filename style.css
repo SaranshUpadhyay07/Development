@@ -4,7 +4,7 @@ body {
     font-size: 1.25em;/*px and pt are almost same while pc is much bigger, roughly around 12 pt...Also % and em can be used which are relative units*/
     text-transform: capitalize; /*lower case and uppercase*/
     text-align: justify; /*left, right, center, justify*/
-    font-family: "Times New Roman", serif;/*This means that use Times New Roman but if it is not available then fall back to the default family we have added that is serif*/ /*Serif, sans-serif, monospace are the three font families*/
+    font-family: "Lato", sans-serif;
 }
 p{
     color: purple;
@@ -16,12 +16,13 @@ p{
 }
 
 #title {
-    color: rgb(162, 115, 7); 
-    font-weight: 500; /* 800 is the standard highest you should go for h1*/
+    color: rgb(162, 115, 7);
+    font-family: "Sarabun", sans-serif; 
 }
 
 .subtitle{
     color: rgb(200, 148, 30);
+    font-family: "Sarabun", sans-serif;
 }
 
 #service-image {    
