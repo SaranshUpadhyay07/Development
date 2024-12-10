@@ -35,3 +35,8 @@ p{
 .italics {
     font-style: italic;/*you can use oblique for more italics*/
 }
+
+#baki {
+    height: 300px;
+    width: 60%;
+}
