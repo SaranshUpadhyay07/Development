@@ -12,7 +12,7 @@ p{
 
 .google-link {
     text-decoration: underline; /*none,underline,overlne and line-through*/
-
+    
 }
 
 #title {
@@ -31,6 +31,7 @@ p{
     /*background: linear-gradient(215deg, rgb(25, 0, 75), black); you can use top,bottom,diagnols etc and also angles*/
     background: radial-gradient(circle, red 13%, blue 53%, green 34%);
     border: 9px, solid, black;/*size, style, color*//*das, dotted, solid, double are the basic types of styles in border*/
+    float: right;
 }
 
 #baki {
@@ -42,4 +43,9 @@ p{
     /*padding-raight: 40px; aise karne se you can give value for top, bootom and left*/
     padding: 100px 40px 20px 0px;/*top, right, bottom, left*/
     margin: 80px 40px; /*top and bottom, left and right*/
+    float: right;
+}
+
+.site-table {
+    display: inline-block;
 }
