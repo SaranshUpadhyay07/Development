@@ -81,8 +81,11 @@ p{
     display: grid;
     grid-template-columns: auto auto auto; /*you can also give your own individual values*/
     grid-template-rows: auto auto;
-    justify-content: space-around; /*Center, end, start, space-evenly*/
-    align-content: space-between;
+    /* justify-content: space-around; /*Center, end, start, space-evenly*/
+    /*align-content: space-between; */
+    /* grid-column-gap: 150px;
+    grid-row-gap: 300px;  */
+     grid-gap: 300px  150px; /*row first and then your columns */
 }
 
 .grid-item {
