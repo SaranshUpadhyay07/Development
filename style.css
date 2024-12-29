@@ -114,6 +114,10 @@ a:hover {
     font-size: 20px;
     color: white;
     background: rgb(89, 150, 255);
+    /* transform: scale(2.5); */
+    /* transform: rotate(180deg); */
+    /* transform: skewY(-45deg); */
+    /*transform: matrix(1, 0, 0, 1, 100, 50); doesnot include the rotation*/
     -webkit-transition: all 0.5s ease-in-out ; /*use can also give delay time after the ease-in-out */
     -moz-transition: all 0.5s ease-in-out ;
     -o-transition: all 0.5s ease-in-out ;
@@ -122,4 +126,6 @@ a:hover {
 .submit-button:hover{
     background: rgb(147, 187, 255);
     padding: 20px 30px;
+    transform: translate(50px, 30px);
+    
 }
