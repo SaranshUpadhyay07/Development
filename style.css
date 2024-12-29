@@ -85,7 +85,8 @@ p{
     /*align-content: space-between; */
     /* grid-column-gap: 150px;
     grid-row-gap: 300px;  */
-     grid-gap: 300px  150px; /*row first and then your columns */
+     /* grid-gap: 300px  150px; row first and then your columns */
+     
 }
 
 .grid-item {
