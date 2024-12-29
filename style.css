@@ -14,7 +14,12 @@ p{
     text-decoration: underline; /*none,underline,overlne and line-through*/
     
 }
-
+a{
+    transition: all ease-in-out 0.5s;
+}
+a:hover {
+    color: red; /* Change 'blue' to your desired color */
+  }
 #title {
     color: rgb(162, 115, 7);
     font-family: "Sarabun", sans-serif; 
@@ -86,7 +91,7 @@ p{
     /* grid-column-gap: 150px;
     grid-row-gap: 300px;  */
      /* grid-gap: 300px  150px; row first and then your columns */
-     
+
 }
 
 .grid-item {
@@ -97,4 +102,24 @@ p{
   width: 70px;
   line-height: 40px;
   margin: 10px; 
+}
+
+.submit-button{
+    margin: 20px 10px;
+    padding: 10px 15px;
+    border: none;
+    text-decoration: none;
+    font-family: "Lato", sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    color: white;
+    background: rgb(89, 150, 255);
+    -webkit-transition: all 0.5s ease-in-out ; /*use can also give delay time after the ease-in-out */
+    -moz-transition: all 0.5s ease-in-out ;
+    -o-transition: all 0.5s ease-in-out ;
+}
+
+.submit-button:hover{
+    background: rgb(147, 187, 255);
+    padding: 20px 30px;
 }
