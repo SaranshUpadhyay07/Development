@@ -131,7 +131,18 @@ a:hover {
 }
 
 #about-me{
-    animation-name: red-to-black;
+    /*animation-name: red-to-black;
+    animation-duration: 4s;
+    animation-timing-function: linear; ease(default), linear, ease-in, ease-out
+    animation-delay: -2s; not commonly used
+    animation-iteration-count: 2; infinite can be used
+    animation-direction: reverse; normal is default, alternate(first forward then reverse), alternate-reverse*/
+    -webkit-animation:red-to-black 4s linear 0s 2 alternate-reverse;
+    -moz-animation:red-to-black 4s linear 0s 2 alternate-reverse;
+    -o-animation:red-to-black 4s linear 0s 2 alternate-reverse;
+    -ms-animation:red-to-black 4s linear 0s 2 alternate-reverse;
+
+    /*        NAME          Duration    timinig function      delay      iteration      direction*/
 }
 
 @keyframes red-to-black{
