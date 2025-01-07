@@ -130,10 +130,14 @@ a:hover {
     
 }
 
+#about-me{
+    animation-name: red-to-black;
+}
+
 @keyframes red-to-black{
     /* from {background: red;}
     to {background: black;} */
     0% {background: red; transform: translate(0px, 0px);}
-    50% {background: yellow; transform: translate(10px, 0px);}
-    100% {background: black; transform: translate(20px, 0px);}
+    50% {background: yellow; transform: translate(10px, 10px);}
+    100% {background: black; transform: translate(20px, 20px);}
 } 
