@@ -2,7 +2,7 @@
 for(var i =0;i<document.querySelectorAll(".drum").length; i++){
     document.querySelectorAll(".drum")[i].addEventListener("click", function (){
        
-        // var n = this.innerHTML;
+        var n = this.innerHTML;
 
         // switch(n){
         //     case"w":
@@ -43,6 +43,10 @@ for(var i =0;i<document.querySelectorAll(".drum").length; i++){
         //     default: console.log(n);
         // }
 
+        makeSound(n);
+
+        buttonAnimation(n);
+
     });
 }
 
@@ -51,6 +55,8 @@ for(var i =0;i<document.querySelectorAll(".drum").length; i++){
 document.addEventListener("keydown", function(event){
 
     makeSound(event.key);
+
+    buttonAnimation(event.key);
 });
 
 function makeSound(key){
@@ -92,4 +98,14 @@ function makeSound(key){
 
         default: console.log(n);
     }
+}
+
+function buttonAnimation(currentKey){
+
+   var activeButton = document.querySelector("."+currentKey);
+   activeButton.classList.add("pressed");
+
+   setTimeout(function(){
+    activeButton.classList.remove("pressed");
+   }, 100);
 }
