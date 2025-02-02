@@ -9,7 +9,7 @@ console.log(`My name is ${sillyName}`);
 
 console.log("---------------");
 
-import  { randomSuperhero } from "superheroes";
+import { randomSuperhero } from "superheroes";
 
 const superHero = randomSuperhero(); 
 
