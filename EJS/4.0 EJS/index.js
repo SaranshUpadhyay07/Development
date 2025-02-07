@@ -9,12 +9,21 @@ app.get("/", (req,res) =>{
     const d = new Date();
     const day = d.getDay();
 
-    let type = "a weekday";
-    let adv = "it's time to work hard"
+    let type = "";
+    let adv = "Gaand Phadni hai";
 
-    if(day===0|| day===6){
-        let type = "a weekend";
-    let adv = "Mauj karo"
+    switch(day){
+        case 0:type="Sunday";
+        case 1:type="Monday";
+        case 2:type="Tuesday"; 
+        case 3:type="Wednesday";
+        case 4:type="Thursday";
+        case 5:type="Friday";
+        case 6:type="Saturday";
+    }
+
+    if(type === "Sunday"|| type ==="Saturday"){
+        adv="Mauj karo yaar"
     }
     res.render("index.ejs", 
         {dayType: type,
