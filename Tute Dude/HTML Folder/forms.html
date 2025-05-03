@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+    <h1>Forms in html</h1>
+    <form action="index.html">
+       <label for="fname">Enter your First Name:</label>  
+       <input id ="fname" type="text" minlength="5" maxlength="20" placeholder="John" required/>
+
+       <label for="">Enter Your Last Name:</label>
+       <input type="text" minlength="5" maxlength="20" placeholder="Doe"/>
+       <br><br>
+
+        <label for="">Age:</label>
+        <input type="number"/>
+        <br><br>
+       
+        <label for="">Email:</label>
+        <input type="email"/>
+        <br><br>
+       
+        <label for="">DOJ:</label>
+        <input type ="date"/>
+        <br><br>
+       
+        <label for="">Password</label>
+        <input type="password" minlength="8" maxlength="20" required/>
+        <br><br>
+
+        <p>Enter your Shirt Size</p>
+        <input type="radio" name="size" id="small"/><label for="small">S</label>
+        <input type="radio" name="size" id="medium" checked/><label for="medium">M</label>
+        <input type="radio" name="size" id="large"/><label for="large">L</label>
+        <input type="radio" name="size" id="xLarge"/><label for="xLarge">XL</label>
+        <br><br>
+
+        <Label for="colour">Please select the colour of the shirt: </Label>
+        <input id="colour" type="color" value="#ff0000"/>
+        <br><br>
+
+        <label for="payment">Payment Options:</label>
+        <select name="payment" id="payment">
+            <option value="credit">Credit Card</option>
+            <option value="debit">Debit Card</option>
+            <option value="netbanking">Net Banking</option>
+            <option value="upi">UPI</option>
+            <option value="cod">Cash on Delivery</option>
+            </select>
+            <br /><br />
+
+            <label for="">Please provide yout valueable feedback</label>
+            <!-- <input type="text" placeholder="Enter your feedback here" /> -->
+             <textarea name ="feedback" id="feedback" cols="20" rows="10" placeholder="Enter your feedback here"></textarea>
+             <br /><br />
+
+            <input type="reset"/>
+            <input type="submit" value="Submit"/>
+        </select>
+    </form>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
+    <link rel="stylesheet" href="cssSelector.css"/>
+</head>
+<body>
+    <!--
+        >> ELement Selector: Selects all elements of a specified type.
+        >> ID Selector: Selects a single element with a specific ID.
+        >> Class Selector: Selects all elements with a specific class.
+        >> Universal Selector: Selects all elements in the document.
+        >> Nested Selector: Selects elements that are nested within a specific element.
+        >> Direct Child Selector: Selects elements that are direct children of a specified element.
+        >> Descendant Selector: Selects elements that are descendants of a specified element.
+    -->
+    <header>
+        <h1>Selectors in CSS</h1>
+    </header>
+    <main>
+        <article id="elementSel">
+            <h2>Element Selector</h2>
+            <p class="pClass p1Class">This selector applies styles to all p elements.</p>
+        </article>
+        <article id="idSel">
+            <h2>ID Selector</h2>
+            <p id="para">This selector applies styles to the element with the ID unique.</p>
+        </article>
+        <article id="classSel">
+            <h2>Class Selector</h2>
+            <p class="pClass">This selector applies styles to all elements with the class highlight.</p>
+        </article>
+        <article id="descSel">
+            <h2>Descendant Selector</h2>
+            <p>Selects elements that are descendants of a specified element.</p>
+            <section>
+                <p>Selects elements that are descendants of a specified element.</p>
+            </section>
+            <p>Selects elements that are descendants of a specified element.</p>
+        </article>
+        <article id="direcSel">
+            <h2>Descendant Selector</h2>
+            <p>Selects elements that are direct children of a specified element.</p>
+            <section>
+                <p>Selects elements that are direct children of a specified element.</p>
+                <p>Selects elements that are direct children of a specified element.</p>
+            </section>
+            <p>Selects elements that are direct children of a specified element.</p>
+        </article>
+    </main>
+</body>
+</html>

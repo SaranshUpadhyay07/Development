@@ -1,0 +1,66 @@
+/* 
+    Selector Syntax:
+    SelectorType{
+        propertyKey: propertyValue;
+    }
+ */
+
+/* Element Selector */
+
+p{
+    color:rgb(55, 133, 178)
+}
+
+h2{
+    color:rgb(43, 215, 186)
+}
+
+/* ID Selector */
+
+#para{
+    color:rgb(73, 42, 3);
+    font-family: cursive;
+}
+
+/* Class Selector */
+
+.pClass {
+    font-family:monospace;
+    background-color: rgb(188, 226, 235); 
+}
+
+.p1Class{
+    font-size: x-large;
+} 
+
+/*Nested Selector*/
+
+/* #pId, #p1Id, .p1Class, .pClass{
+    color: rgb(255, 0, 0);
+    } This is for avoiding same code wrting multiple times
+*/
+
+/* Universal Selector*/
+
+*{
+    font-family:'Courier New', Courier, monospace;
+    color:rgb(210, 156, 156)
+}
+
+/* Descendant Selector */
+
+#descSel p{
+    color:brown
+}
+
+/* Direct Child Selector */
+
+#direcSel > p{
+    color:blue
+}
+
+p:hover{
+    color:green;
+    background-color: rgb(255, 255, 0);
+}
+
