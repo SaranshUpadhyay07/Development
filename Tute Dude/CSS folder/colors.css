@@ -1,0 +1,16 @@
+body{
+    font-size:20px;
+    font-family:cursive;
+    text-align: center;
+    color:#344E41;
+    background-color: #DAD7CD;
+}
+
+article{
+    background-color: #000301;
+    color:white;
+    padding: 45px;
+    margin:45px;
+    font-size:16px;
+    border-radius:25%;
+}
