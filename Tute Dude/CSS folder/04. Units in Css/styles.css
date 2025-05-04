@@ -1,0 +1,24 @@
+main{
+    border: 10px solid rgb(106, 69, 22);
+    padding: 5%;
+    border-radius: 15px;
+    /* width: 70%; */
+    /* %, vw, vh, px, em, rem (root element relative) */
+}
+
+/* 1em = 16px */
+
+section{
+    border: 15px dotted rgb(92, 140, 20);
+}
+
+body{
+    font-size: 2em; /* Due to this h2 size is becoming 2*2 em */
+}
+
+h2{
+    font-family:fantasy;
+    /* font-size: 30px;  px is fixed even if we change the browser settings i.e it is absolute*/
+    font-size: 2rem; /* em is relative to the parent element i.e it is relative */
+
+}
