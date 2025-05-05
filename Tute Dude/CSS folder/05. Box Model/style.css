@@ -1,0 +1,16 @@
+*{
+    margin: 0px;
+    padding: 0px;
+     box-sizing: border-box; /*This will make the width and height of the element include padding and border */
+}
+.box2{
+    padding:60px;
+}
+div{
+    border:15px solid rgb(0, 180, 156);
+    /* padding: 10px 5px 6px 66px; top right bottom left */
+    padding: 35px 40px; /* (top bottom) (left right) */
+    margin: 25px;
+    width: 250px;
+    height:250px;
+}
