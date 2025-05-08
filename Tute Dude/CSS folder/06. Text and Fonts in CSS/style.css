@@ -1,0 +1,23 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Sarabun:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap'); */
+/* h1{
+    color: palevioletred;
+    background-color: darkslategray;
+    text-decoration: underline;
+    text-decoration-style: dotted;
+    text-decoration-color: rgb(255, 77, 0);
+}
+
+p{
+    text-align: justify;
+    text-indent: 80px;
+    letter-spacing: 0.05rem;
+    line-height: 1.5rem;
+    word-spacing: 0.09rem;
+    white-space: pre-line;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); (Shadow effect on text )
+     text-transform: uppercase; ( Transform text to uppercase)
+}  */
+
+h1{
+    font-family: "Cedarville Cursive",fantasy
+}
