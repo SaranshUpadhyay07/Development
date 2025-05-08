@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox in CSS</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        ul{
+            list-style-type: none;
+            height:200px;
+            margin:0;
+            padding:0;
+            border: 1px solid red;
+            display:flex; /* flex is applied to the parent */
+            flex-direction:row-reverse; /*The order is reversed*/
+            /* justify-content: flex-end; Used to align the flex items  */
+            justify-content: space-between;
+            /* align-items:end; align-items is used to align the flex items vertically */
+            align-items: stretch; /* stretch is used to stretch the items to fill the container */;
+        }
+        li{
+            border: 1px solid black;
+            margin:0.5em;
+            padding:0.5em;
+        }
+
+        .first{
+            order:2;
+        }
+
+        .second{
+            order:1;
+        }
+
+        .third{
+            order:3;
+        }
+        /* The order property is used to change the order of the flex items */
+    </style>
+</head>
+<body>
+    <ul>
+        <li class="first">1st</li>
+        <li class="second">2nd</li>
+        <li class="third">3rd</li>
+    </ul>
+</body>
+</html>
