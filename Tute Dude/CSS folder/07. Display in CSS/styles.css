@@ -1,0 +1,42 @@
+* {
+    /* border: 1px solid green; */
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+
+p{
+    width: 60%;
+}
+
+a{
+    width:60%;
+    height:25%; /*No effect as anchor tag is inline by default so you need to set display property to block*/
+    
+}
+
+img{
+    width: 35%;
+
+}
+
+ul{
+    list-style: none; /*No bullets*/
+    text-align:right;
+    background-color: black;
+    padding:30px
+}
+
+ul>li>a {
+    color: rgb(125, 7, 7);
+    text-decoration: none; /*No underline*/;
+}
+
+li{
+    display: inline;
+    
+}
+
+li>a:hover{
+    color:white;
+}
