@@ -1,0 +1,26 @@
+.container{
+    /* width: 400px;
+    height: 400px; */
+    /* border: 1px solid red; */
+    /* overflow:hidden;This will hide the overflow content */
+    /* overflow: scroll; This will add a scrollbar to the container */
+    /* overflow:auto; This will add a scrollbar only when needed */
+    /* overflow:visible; This will show the overflow content outside the container */
+    text-align: justify;
+}
+
+.img1{
+    float: left;
+}
+
+.sub{
+    overflow:auto;
+}
+
+.img2{
+    float:right;
+}
+
+.p2{
+    clear: right;/* This will clear the float on the right side */
+}
