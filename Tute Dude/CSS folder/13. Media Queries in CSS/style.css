@@ -1,0 +1,18 @@
+body{
+    background-color: aqua;
+}
+
+/* @media (orientation: landscape){
+    body{
+        background-color:rgb(107, 126, 29);
+    }
+} */
+
+@media(min-width: 400px) and (max-width: 600px){
+    body{
+        background-color: green;
+    }
+}
+
+/* max-width =500 px likhna will overwrite <=300 hai to neeche uske */
+/*max-width and min-width should be at top*/
