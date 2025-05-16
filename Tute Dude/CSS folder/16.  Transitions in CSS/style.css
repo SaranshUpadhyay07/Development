@@ -1,0 +1,42 @@
+.box{
+    width: 200px;
+    height: 200px;
+    background-color: rgb(70, 13, 123);
+    margin: 100px auto;
+    /* transition:1s ease-out; */
+    transition-duration: 1s; /* only duration */
+    transition-property: background-color, border-radius, transform; /* only property on which the transition should work */
+    /*kaam dono properties karengi but jo nhi hai transition-property mein uspe transition-suration nhi lgega*/
+    /*donot use transition-property: all */
+    transition-delay: 0.3s;
+    transition-timing-function: linear;
+}
+
+.box:hover{
+    background-color: rgb(137, 40, 185);
+    border-radius: 50%;
+    transform: rotate(180deg);
+}
+
+/* nav{
+    background-color: black;
+    color: white;
+} */
+
+.list{
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+.item{
+    font-size: 1.5rem;
+    transition: 0.5s ease-in;
+}
+
+.item:hover{
+    color: rgb(147, 108, 9);
+    text-decoration: underline;
+    transform: translateY(-10px);
+    background-color:burlywood
+}
