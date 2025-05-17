@@ -1,0 +1,103 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-color: rgb(92, 164, 247);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction:column;
+    gap: 200px;
+}
+
+.container{
+    width: 280px;
+    height: 280px;
+    border: 3px solid white;
+    animation: orbit 4s linear infinite;
+    border-radius: 70%;
+}
+
+.box{
+    width: 80px;
+    height: 80px;
+    background-color: rgb(228, 228, 181);
+    /* transition: 0.5s ease-in; */
+    /* animation-name:orbit; */
+    animation-duration: 3s;
+    /* animation-iteration-count: infinite; */
+    /* animation-delay: 2s; */
+    /* animation-direction: alternate; */
+    animation-timing-function: linear; /* what happens in the first half of the animation will happen in the second half */
+    border-radius: 50%;
+}
+
+/* .box:hover{
+    transform: translate(200px);
+} */
+
+@keyframes orbit{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes slide-in {
+    0%{
+        transform: translate(-200px);
+    }
+    100%{
+        transform: translate(200px);
+    }
+    
+}
+
+@keyframes shiftTheBox {
+    0%, 100%{
+        transform:translate(0, 0);
+    }
+    25%{
+        transform:translate(200px,0);
+    }
+    50%{
+        transform:translate(200px,200px);
+    }
+    75%{
+        transform:translate(0,200px);
+    }
+}
+
+.loader{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    gap:10px;
+
+}
+
+.dot{
+    width: 10px;
+    height: 10px;
+    background-color: white;
+    border-radius: 50%;
+    animation: loading 1s ease-in infinite alternate;
+}
+.dot:nth-child(even){
+    animation-delay: 0.1s;
+}
+
+
+@keyframes loading{
+    from{
+        transform:translateY(-10px);
+    }
+    to{
+        transform: translateY(10px);
+    }
+}
