@@ -1,28 +1,17 @@
 const express = require('express');
-const bodyParser = require('body-parser');
+const app = express();
 
-var app = express();
+app.set("view engine", "ejs"); // Use EJS templating engine
+app.set("views", __dirname + "/views"); // Ensure it finds the views folder
 
-app.get("/", function(req,res){
-    var d = new Date();
-    var day = d.getDay();
-    if(day==0){
-        res.send("Day is sunday");
-    }else if(day==1){
-        res.send("Day is monday");
-    }else if(day==2){
-        res.send("Day is Tuesday");
-    }else if(day==3){
-        res.send("Day is wednesday");
-    }else if(day==4){
-        res.send("Day is thursday");
-    }else if(day==5){
-        res.send("Day is friday");
-    }else{
-        res.send("Day is saturday");
-    }
+app.get("/", function(req, res) {
+    const d = new Date();
+    const day = d.getDay();
+    const daytext = (day === 0 || day === 6) ? "Weekend" : "Weekday";
+
+    res.render("list", { dayejs: daytext }); // Pass variable to EJS
 });
 
-app.listen(3000, function(){
-    console.log("Server stated");
-})
+app.listen(3000, function() {
+    console.log("Server started on http://localhost:3000");
+});
